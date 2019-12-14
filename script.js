@@ -8,7 +8,7 @@ const grid_width = 16;
 const grid_height = 32;
 const toolbar = document.querySelector('#toolbar');
 
-const colors = ["#1e2022", "#05668d", "#1a936f", "#eeeeee","#ffc857"]
+const colors = ["#1e2022", "#05668d", "#1a936f", "#eeeeee", "#ffc857", "#EF5D60"]
 
 //todo add red color too
 
