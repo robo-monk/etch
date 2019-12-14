@@ -10,12 +10,24 @@ eeeeee -RELAXING WHITE
 c9d6df -MUTED GRAY
 f0f5f9 -MUTED WHITE
 
+--colors--
+
+EF5D60
+1e2022
+1a936f
+ffc857
+05668d
+eeeeee
+
  */
  body{
      background-color:#1e2022 ;
  }
 
 .wrapper{
+
+    cursor: url('assets/cursor/cursor_black.png'), auto;
+    /* cursor: cell;	 */
 
     margin-right: auto; /* 1 */
     margin-left:  auto; /* 1 */
@@ -29,6 +41,7 @@ f0f5f9 -MUTED WHITE
 
     border-radius: 3px;
     box-shadow: 0 4px 12px 0px #1e2022;
+
 }
 
 
