@@ -4,7 +4,10 @@ const container = document.querySelector('#container');
 const table = document.createElement('table');
 var pressedKeys = {};
 const grid_width = 16;
-const grid_height = 16;
+const grid_height = 32;
+const toolbar = document.querySelector('#toolbar');
+
+var drawing = false;
 
 //TO-DO create the table and then add the rows programmatically
 
@@ -39,11 +42,21 @@ function keyUp(e){
 
 function hovered(object){
 
-    console.log(this);
     object.style.backgroundColor = 'black';
 
+}
+
+function showToolbar(show){
+
+    if (show){
+        toolbar.style.opacity = 1;
+    }else{
+        toolbar.style.opacity = 0;
+    }
 }
 
 
 window.addEventListener('keydown', keyDown);
 window.addEventListener('keyup', keyUp);
+toolbar.onmousemove = function () { showToolbar(true); };
+toolbar.onmouseout = function () { showToolbar(false);}

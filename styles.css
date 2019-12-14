@@ -1,8 +1,43 @@
+/* COLOR PALLETE:
+
+222831 -DARK BLUE
+393e46 -DARK GRAY
+00adb5 -LIGHT BLUE
+eeeeee -RELAXING WHITE
+
+1e2022 -DARK BLACK
+52616b -DARK GRAY
+c9d6df -MUTED GRAY
+f0f5f9 -MUTED WHITE
+
+ */
+ body{
+     background-color:#1e2022 ;
+ }
+
+.wrapper{
+
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 80%; /* 2 */
+
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+
+    background-color: #eeeeee;
+
+    border-radius: 3px;
+    box-shadow: 0 4px 12px 0px #1e2022;
+}
+
+
 .square{
+
     width: 50px;
     margin: 0px;
 
-    background-color: white;
+    background-color: transparent;
 }
 
 .square:after {
@@ -11,6 +46,33 @@
     padding-bottom: 100%;
 }
 
-/* .square:hover {
-    background-color: black;
-} */
+#toolbar{
+
+    position: fixed;
+    padding: 50px;
+
+    
+    /* width:  15%;
+    height: 5%; */
+
+    top: 50%;
+    margin-top: -5cm; /* Half of the width */
+
+    height:  10cm;  
+    width: 1.545085cm;
+
+    /* background-color: #1e2022; */
+    background-color: transparent;
+    opacity: 0;
+
+    /* box-shadow: 0 4px 12px 0px #1e2022; */
+
+}
+
+img{
+    
+    cursor: pointer;
+    
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
