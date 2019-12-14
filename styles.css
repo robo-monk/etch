@@ -1,0 +1,16 @@
+.square{
+    width: 50px;
+    margin: 0px;
+
+    background-color: white;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+/* .square:hover {
+    background-color: black;
+} */
