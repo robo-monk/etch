@@ -1,12 +1,10 @@
-alert("welcome to ETCH,  a program developed my robo-monk");
-
 const wrapper = document.querySelector('.wrapper');
 const container = document.querySelector('#container');
 const table = document.createElement('table');
 var pressedKeys = {};
-const grid_width = 16;
-const grid_height = 32;
+const grid_square = 32;
 const toolbar = document.querySelector('#toolbar');
+const instr = document.querySelector('#shortcuts');
 
 const colors = ["#1e2022", "#05668d", "#1a936f", "#eeeeee", "#ffc857", "#EF5D60"]
 
@@ -18,11 +16,13 @@ var drawing = false;
 
 //TO-DO create the table and then add the rows programmatically
 
-for (i=0; i<grid_height; i++){
+for (i=0; i<grid_square; i++){
     //row
     const row = document.createElement('tr');
     container.appendChild(row);
-    for (u = 0; u < grid_width; u++) {
+    // const square_width = wrapper.style.width/grid_square;
+   
+    for (u = 0; u < grid_square; u++) {
         const col = document.createElement('td');
         const div = document.createElement('div');
         div.classList.add("square");
@@ -56,12 +56,12 @@ function hovered(object){
 
 }
 
-function showToolbar(show){
+function show(show, object){
 
     if (show){
-        toolbar.style.opacity = 1;
+        object.style.opacity = 1;
     }else{
-        toolbar.style.opacity = 0;
+        object.style.opacity = 0;
     }
 
 }
@@ -90,6 +90,30 @@ function keyHit(key){
 
 window.addEventListener('keydown', keyDown);
 window.addEventListener('keyup', keyUp);
-toolbar.onmousemove = function () { showToolbar(true); };
-toolbar.onmouseout = function () { showToolbar(false);}
+toolbar.onmousemove = function () { show(true,toolbar); };
+toolbar.onmouseout = function () { show(false,toolbar);}
+instr.onmousemove = function () { show(true,instr); };
+instr.onmouseout = function () { show(false,instr); }
 wrapper.style.cursor = `url('assets/cursor/${color_index}.png'), auto`;
+
+const square_width = 960 / grid_square;
+
+var style = document.createElement('style');
+style.innerHTML = `
+    .square{
+
+    width: ${square_width}px;
+    margin: 0px;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}`;
+
+
+
+document.head.appendChild(style);
