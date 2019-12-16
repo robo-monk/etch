@@ -56,7 +56,7 @@ function keyUp(e){
 
 function hovered(object){
 
-    if (!pressedKeys["18"]&&started){
+    if (!pressedKeys["17"]&&started){
         object.style.backgroundColor = colors[color_index];
     }
 
