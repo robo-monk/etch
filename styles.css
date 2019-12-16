@@ -22,7 +22,45 @@ eeeeee
  */
  body{
      background-color:#1e2022 ;
+     font-family: 'Roboto Mono', monospace;
+
  }
+ a, a:link {
+    color: #ffc857;
+    transition: all .1s ease;
+
+}
+a:hover {
+    color: #eeeeee;
+}
+
+#welcome{
+
+    /* cursor: none;
+    
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    justify-content: center; */
+
+    padding: 100px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;  
+    animation:blinkingText 1.8s infinite;
+}
+@keyframes blinkingText{
+
+    0%{     color: #eeeeee;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: #eeeeee;  }
+    100%{   color: #eeeeee;    }
+}
+ 
+
+
 
 .wrapper{
 
@@ -40,7 +78,9 @@ eeeeee
 
     border-radius: 3px;
     box-shadow: 0 4px 12px 0px #1e2022;
-    
+    opacity: 0;
+    transition: all .1s ease;
+
 
 }
 
@@ -63,7 +103,7 @@ eeeeee
     /* background-color: #1e2022; */
     background-color: transparent;
     opacity: 0;
-    transition: all .1s ease;
+    transition: all .4s ease;
 
 
     /* box-shadow: 0 4px 12px 0px #1e2022; */
@@ -88,7 +128,7 @@ eeeeee
     /* background-color: #1e2022; */
     background-color: transparent;
     opacity: 0;
-    transition: all .1s ease;
+    transition: all .4s ease;
 
 
     /* box-shadow: 0 4px 12px 0px #1e2022; */

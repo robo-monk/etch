@@ -3,16 +3,29 @@
     <head>
         <title>Luono</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     </head>
     
     <body>
+
+        <div id="welcome">
+
+
+            <img src="assets/logos/luono_white.png" height="90">
+            <p>Press any button to start a new luon</p>
+
+            <a href="about.html">About luono</a>
+
+
+        </div>
         
         <div id="toolbar">
 
+
             
-            <img src="assets/icons/cancel.png" height="30" width="30">
-            <img src="assets/icons/send.png" height="30" width="30">
+            <img src="assets/icons/cancel.png" height="30" width="30" onClick="window.location.reload();">
+            <img src="assets/icons/send.png" height="30" width="30" onclick= "exportBoat();">
 
 
 
@@ -52,9 +65,6 @@
 
         <script src="script.js"></script>
 
-
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
     </body>
 
