@@ -84,6 +84,13 @@ a:hover {
 
 }
 
+#about{
+    margin: auto;
+    text-align: center;
+    max-width: 960px;
+    color: #eeeeee;
+}
+
 
 #toolbar{
 
