@@ -143,8 +143,8 @@ function exportBoat(){
 
     // return ; //FINAL
     // console.log("file:///Users/robo/Desktop/desk/odin_project/etch/index.html?boat="+string_raw) ;//LOCAL
-    // copyToClipboard("https://robo-monk.github.io/etch/index.html?boat=" + string_raw); 
-    copyToClipboard("file:///Users/robo/Desktop/desk/odin_project/etch/index.html?boat=" + string_raw); 
+    copyToClipboard("https://robo-monk.github.io/etch/index.html?boat=" + string_raw); 
+    // copyToClipboard("file:///Users/robo/Desktop/desk/odin_project/etch/index.html?boat=" + string_raw); 
 
 
 
